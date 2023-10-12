@@ -54,7 +54,7 @@ use employee
    begin
    insert into emps(eid,ename,sal,dno) value (eno,ename,sal,dno);
    end $$
-   call emps (707,'Dileep',49000,4)
+   call emps (707,'veniu',49000,4)
             
 8.create view empsal as select eid,ename,
    sal * 12 as annual_salary
