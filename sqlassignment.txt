@@ -4,11 +4,11 @@ use employee
    create table depts(dno int primary key auto_increment,
    dname varchar(20) not null, 
    location varchar(20) check(location='ind'or location='usa'or location='uk'))
-   insert into depts values  (1,'naga','ind')
-   insert into depts values (2,'sai','usa')
-   insert into depts values(3,'dileep','uk')
+   insert into depts values  (1,'chai','ind')
+   insert into depts values (2,'sri','usa')
+   insert into depts values(3,'veniu','uk')
    insert into depts values (4,'kumar','ind')
-   insert into depts values (4,'shaif','')
+   insert into depts values (4,'hari','')
    select * from depts	 
 
 */employee table/*
@@ -16,13 +16,13 @@ use employee
    ename varchar(20) not null, 
    sal int check (sal>=10000 and sal<= 50000 ),
    dno int,  constraint fk foreign key(dno) references  depts(dno))
-   insert into emps values  (701,'naga',14000,1)
-   insert into emps values  (702, 'sai',25000,2)
-   insert into emps values (703,'dileep',39000,3)
+   insert into emps values  (701,'chai',14000,1)
+   insert into emps values  (702, 'sri',25000,2)
+   insert into emps values (703,'veniu',39000,3)
    insert into emps values (704,'kumar',43000,4)
-   insert into emps values (705,'karthik',25000,3),(706,'raju',39000,2)
+   insert into emps values (705,'karthik',25000,3),(706,'sri',39000,2)
    insert into emps values  (705, 'kumar',52000,3)
-   insert into emps values (706,'naga',2000,2)
+   insert into emps values (706,'sri',2000,2)
     select * from emps
 
 */project table/*
